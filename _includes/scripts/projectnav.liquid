@@ -1,0 +1,53 @@
+<!-- <script src="http://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script src="/assets/js/isotope.pkgd.js"></script>
+<script>
+    $(document).ready(function() {
+        // init Isotope
+        var $grid = $('.projects-container').isotope({
+            // options
+        });
+
+        // Trigger click on the default active button
+        $('.btn-group .btn-project.active').trigger('click');
+
+        // filter items on button click
+        $('.btn-group').on('click', 'a', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+
+            // Toggle active class
+            $('.btn-group a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script> -->
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script src="/assets/js/isotope.pkgd.js"></script>
+<script>
+    $(document).ready(function() {
+        // init Isotope
+        var $grid = $('.projects-container').isotope({
+            // options
+        });
+
+        // Set default filter and active state
+        var defaultFilter = '.js-id-Featured'; // Adjust this to match the default filter
+        $grid.isotope({ filter: defaultFilter });
+        $('.btn-group').find('[data-filter="' + defaultFilter + '"]').addClass('active');
+        $('.btn-project[data-filter="' + defaultFilter + '"]').addClass('active');
+
+        // filter items on button click
+        $('.btn-group').on('click', 'a', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+
+            // Toggle active class
+            $('.btn-group a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>

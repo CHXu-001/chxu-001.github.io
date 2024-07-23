@@ -27,7 +27,7 @@ body.sticky-bottom-footer {
   padding-bottom: 0;
 }
 
-.container {
+.container, .btn-toolbar, .btn-group {
   max-width: $max-content-width;
 }
 

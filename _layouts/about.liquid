@@ -22,8 +22,7 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
@@ -41,10 +40,11 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
+    {% if page.news and site.announcements.enabled %}
+      <h3 id="news"><i style="font-size: 27px;" class="fa">&#xf0a1;</i>&nbsp; News</h3>
+      <!-- <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+      </h2> -->
       {% include news.liquid limit=true %}
     {% endif %}
 
@@ -58,11 +58,12 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+      <h3 id="pub"><i style="font-size:27px;" class="fa">&#xf5d2;</i>&nbsp; Selected Publications</h3>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <!-- Selected projects -->
+    {%- include selected_projects.liquid %}
 
     <!-- Social -->
     {% if page.social %}

@@ -3,7 +3,17 @@
  ******************************************************************************/
 
 // Typography
-
+.clearfix{
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-weight: 100;
+}
+h2, h3{
+  font-weight: 300;
+}
+h5{
+  font-weight: 400;
+}
 p,
 h1,
 h2,
@@ -16,6 +26,7 @@ div,
 li,
 span,
 strong {
+  font-family: 'Merriweather', serif;
   color: var(--global-text-color);
 }
 
@@ -26,11 +37,13 @@ hr {
 table {
   td,
   th {
+    font-family: 'Merriweather', serif;
     font-size: 1rem;
     padding: 1px 1rem 1px 0;
   }
 
   th {
+    font-family: 'Merriweather', serif;
     font-weight: bold;
   }
 }
@@ -1416,4 +1429,46 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+// News % by Chenghao 16/02/2024
+.news table tbody {
+  display: block;
+  height: 250px;
+  overflow-y: scroll;
+}
+.news table td {
+  font-size: 1rem;
+  color: var(--global-text-color);
+}
+
+.news table th {
+  color: var(--global-text-color);
+}
+
+// Customized by Chenghao 24/03/2024
+.btn-project {
+  background-color: var(--global-bar-color);
+  border-color: var(--global-bar-border);
+  color: #fff; // White text color
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--global-bar-color-darker); // Darker on hover/focus
+    border-color: var(--global-bar-border);// Darker border on hover/focus
+    color: #fff; // White text color when active
+  }
+
+  &:disabled {
+    background-color: #6c757d; // Gray background for disabled state
+    border-color: #6c757d; // Gray border for disabled state
+    color: #fff; // White text for disabled state
+  }
+}
+
+.btn.btn-project.active,
+.btn.btn-sm.btn-project.active {
+  background-color: var(--global-bar-color-darker);
+  border-color: var(--global-bar-border);
+  color: #fff;
 }

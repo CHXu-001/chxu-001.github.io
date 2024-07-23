@@ -37,6 +37,25 @@ $black-color: #000000 !default;
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
+// Nord Theme
+$nord-bg-color:              #2e3440 !default;
+$nord-bg-color-light:        #3B4252 !default;
+$nord-bg-color-lighter:      #434C5E !default;
+$nord-bg-color-lightest:     #4C566A !default;
+$nord-fg-color:              #D8DEE9 !default;
+$nord-fg-color-light:        #E5E9F0 !default;
+$nord-fg-color-lighter:      #ECEFF4 !default;
+$nord-transmit-color:        #88C0D0 !default;
+$nord-transmit-color-light:  #8FBCBB !default;
+$nord-transmit-color-dark:   #81A1C1 !default;
+$nord-transmit-color-darker: #5E81AC !default;
+
+$nord-red:                   #BF616A !default;
+$nord-orange:                #D08770 !default;
+$nord-yellow:                #EBCB8B !default; 
+$nord-green:                 #A3BE8C !default;
+$nord-purple:                #B48EAD !default;
+
 // Font awesome location
 $fa-font-path: "../webfonts";
 

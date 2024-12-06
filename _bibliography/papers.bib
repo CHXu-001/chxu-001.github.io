@@ -3,42 +3,70 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{ChatGarment,
+  abbr={PAPER},
+  title={ChatGarment: Garment Estimation, Generation and Editing via Large Language Models},
+  author={Bian, S. and Xu, C. and Xiu, Y. and Grigorev, A. and Liu, Z. and Lu, C. and Black, M. J. and Feng, Y.},
+  journal={preprint coming soon},
+  abstract={ChatGarment is a novel approach that leverages large vision-language models (VLMs) to automate the estimation, generation, and editing of 3D garment sewing patterns from images or text descriptions. Unlike previous methods that often lack robustness and interactive editing capabilities, ChatGarment finetunes a VLM to produce GarmentCode, a JSON-based, language-friendly format for 2D sewing patterns, enabling both estimating and editing from images and text instructions. To optimize performance, we refine GarmentCode by expanding its support for more diverse garment types and simplifying its structure, making it more efficient for VLM finetuning. Additionally, we develop an automated data construction pipeline to generate a large-scale dataset of image-to-sewing-pattern and text-to-sewing-pattern pairs, empowering ChatGarment with strong generalization across various garment types.},
+  year={2024},
+  image={chatgarment.png},
+  website={https://chatgarment.github.io/},
+  selected={true}
+}
+
+@article{BuildNet3D,
+  abbr={PAPER},
+  title={Exploiting Semantic Scene Reconstruction for Estimating Building Envelope Characteristics},
+  author={Xu, C. and Mielle, M. and Laborde, A. and Waseem, A., and Forest, F. and Fink, O.},
+  journal={arXiv preprint (Under Review)},
+  abstract={The precise assessment of geometric building envelope characteristics is essential for informed building retrofitting decisions. Previous methods for estimating building characteristics, such as window-to-wall ratio, building footprint area, and the location of architectural elements, have primarily relied on deep-learning-based detection or segmeantion techniques on 2D images. However, these approaches tend to focus on planar facade properties, limiting their accuracy and comprehensiveness when analyzing 3D building envelopes. This work leverages cutting-edge neural surface reconstruction techniques based on SDF representations for 3D building analysis. We propose BuildNet3D, a novel framework to estimate geometric building characteristics from 2D image inputs. By integrating SDF-based representation with semantic modality, BuildNet3D recovers fine-grained 3D geometry and semantics of building envelopes, enabling the automatic extraction of key building characteristics.},
+  year={2024},
+  image={buildnet.png},
+  publisher=springer,
+  arxiv={2410.22383},
+  selected={true}
+}
+
+@article{DynaPix,
+  abbr={PAPER},
+  title={DynaPix SLAM: A Pixel-Based Dynamic Visual SLAM Approach},
+  author={Xu*, C. and Bonetto*, E. and Ahmad, A.},
+  journal={DAGM German Conference on Pattern Recognition (GCPR)},
+  abstract={Visual Simultaneous Localization and Mapping (V-SLAM) methods achieve remarkable performance in static environments but struggle with moving objects that affect their core modules. Dynamic SLAM approaches often leverage semantic information, geometric constraints, or optical flow to exclude dynamic elements. However, these methods are limited by imprecise estimations and reliance on the accuracy of deep-learning models. Furthermore, predefined thresholds for static/dynamic classification and the inability to recognize unexpected moving objects also degrade their performance. To address these issues, we introduce DynaPix, a semantic-free SLAM system based on per-pixel motion probability estimation and improved pose optimization. DynaPix estimates per-pixel motion probabilities using a static background differencing method on image data and optical flows from splatted frames, integrating these probabilities into map point selection and applying them through weighted bundle adjustment in ORB-SLAM2. Evaluations on the GRADE and TUM RGB-D datasets demonstrates significantly lower trajectory errors and extended tracking times in both static and dynamic sequences.},
+  year={2024},
+  publisher=springer,
+  arxiv={2309.09879},
+  image={dynapix.png},
+  code={https://github.com/robot-perception-group/DynaPix},
+  website={https://dynapix.is.tue.mpg.de/},
+  selected={true}
+}
+
 @article{tmech2024,
   abbr={PAPER},
-  title={Implementation of a Long-lasting, Untethered, Lightweight, Upper-Limb Exoskeleton},
+  title={Implementation of a Long-Lasting, Untethered, Lightweight, Upper Limb Exoskeleton},
   author={Liu, H. and Fang, K. and Chen, L. and Xu, C. and Chen, C. and Wang, T. and Wu, Z. and Ye, J. and Fu, C. and Chen, G. and Wang, H.},
-  abstract={To prevent muscle fatigue or disorder from long-term or repetitive arm-lifting in manual operations, various exoskeletons have been developed. However, motorized exoskeletons suffer from heavy mass and high cost, while previous passive exoskeletons possess poor adaptability. To solve this problem, we designed a lightweight (3.1 kg) upper limb exoskeleton capable of providing self-adaptable support based on linkage mechanisms and gas springs, with tunable maximum force based on small motors and sensors to adapt to hand loads. The motors adjust the mechanical structure’s dimensions, instead of directly supporting the arms, resulting in low power consumption (1.85 W) and extended operation (11 hours). Experimental results show that the measured surface electromyogram (sEMG) activities reduced up to 43.84% and 46.23% for static and dynamic tests, respectively.},
+  abstract={To prevent muscle fatigue or disorder from long-term or repetitive arm-lifting in manual operations, various exoskeletons have been developed. However, motorized exoskeletons suffer from heavy mass and high cost, while previous passive exoskeletons possess poor adaptability. To solve this problem, we designed a lightweight (3.1 kg) upper limb exoskeleton capable of providing self-adaptable support based on linkage mechanisms and gas springs, with tunable maximum force based on small motors and sensors to adapt to hand loads. The motors adjust the dimension of the mechanical structure, instead of directly supporting the arms, resulting in low power consumption (1.85 W) and extended operation (11 hours). Experimental results show that the measured surface electromyogram activities reduced up to 43.84% and 46.23% for static and dynamic tests, respectively.},
   journal={IEEE/ASME Transactions on Mechatronics (TMECH)},
   volume={47},
   issue={10},
   pages={777--780},
   numpages={0},
   year={2024},
-  month={June},
   publisher=ieee,
   image={TMECH.png},
   doi={10.1109/TMECH.2024.3431884},
-  pdf={https://drive.google.com/file/d/1pEHqWgeVyxcW_C0bcH2PYkcqWSTlBtFD/view?usp=sharing},
+  html={https://ieeexplore.ieee.org/document/10629199},
   selected={true}
 }
-@article{DynaPix,
-  abbr={PAPER},
-  title={DynaPix SLAM: A Pixel-Based Dynamic Visual SLAM Approach},
-  author={Xu, C. and Bonetto, E. and Ahmad, A.},
-  journal={arXiv preprint},
-  year={2024},
-  month={March},
-  publisher=aps,
-  arxiv={2309.09879},
-  code={https://github.com/robot-perception-group/DynaPix},
-  selected={true}
-}
+
 @article{TRO2023,
   abbr={PAPER},
   title={GRADE: Generating Realistic Animated Dynamic Environments for Robotics Research},
   author={Bonetto, E. and Xu, C. and Ahmad, A.},
   abstract={In this work, we present a fully customizable framework for generating realistic animated dynamic environments (GRADE) for robotics research. The data produced can be post-processed, e.g. to add noise, and easily expanded with new information using the tools that we provide. To demonstrate GRADE, we generated an indoor dynamic environment dataset and then compared different SLAM algorithms on the produced sequences. By doing that, we show how current research over-relies on well-known benchmarks and fails to generalize. Furthermore, our tests with YOLO and Mask R-CNN provide evidence that our data can improve training performance and generalize to real sequences. Finally, we show GRADE's flexibility by using it for indoor active SLAM, with diverse environment sources, and in a multi-robot scenario. The code, results, implementation details, and generated data are provided as open-source. },
-  journal={arXiv preprint},
+  journal={arXiv preprint (Under Review)},
   year={2023},
   month={October},
   publisher=aps,
@@ -48,6 +76,7 @@
   website={https://grade.is.tue.mpg.de/},
   selected={true}
 }
+
 @article{FallingWallsLab,
   abbr={ TALK },
   title={Breaking the Wall of Intensive Work Above Head: Design of Passive Upper-Limb Exoskeleton},

@@ -3,28 +3,29 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{ChatGarment,
-  abbr={PAPER},
-  title={ChatGarment: Garment Estimation, Generation and Editing via Large Language Models},
-  author={Bian, S. and Xu, C. and Xiu, Y. and Grigorev, A. and Liu, Z. and Lu, C. and Black, M. J. and Feng, Y.},
-  journal={preprint coming soon},
-  abstract={ChatGarment is a novel approach that leverages large vision-language models (VLMs) to automate the estimation, generation, and editing of 3D garment sewing patterns from images or text descriptions. Unlike previous methods that often lack robustness and interactive editing capabilities, ChatGarment finetunes a VLM to produce GarmentCode, a JSON-based, language-friendly format for 2D sewing patterns, enabling both estimating and editing from images and text instructions. To optimize performance, we refine GarmentCode by expanding its support for more diverse garment types and simplifying its structure, making it more efficient for VLM finetuning. Additionally, we develop an automated data construction pipeline to generate a large-scale dataset of image-to-sewing-pattern and text-to-sewing-pattern pairs, empowering ChatGarment with strong generalization across various garment types.},
-  year={2024},
-  image={chatgarment.png},
-  website={https://chatgarment.github.io/},
-  selected={true}
-}
-
 @article{BuildNet3D,
   abbr={PAPER},
   title={Exploiting Semantic Scene Reconstruction for Estimating Building Envelope Characteristics},
   author={Xu, C. and Mielle, M. and Laborde, A. and Waseem, A., and Forest, F. and Fink, O.},
-  journal={arXiv preprint (Under Review)},
+  journal={Building and Environment Journal},
   abstract={The precise assessment of geometric building envelope characteristics is essential for informed building retrofitting decisions. Previous methods for estimating building characteristics, such as window-to-wall ratio, building footprint area, and the location of architectural elements, have primarily relied on deep-learning-based detection or segmeantion techniques on 2D images. However, these approaches tend to focus on planar facade properties, limiting their accuracy and comprehensiveness when analyzing 3D building envelopes. This work leverages cutting-edge neural surface reconstruction techniques based on SDF representations for 3D building analysis. We propose BuildNet3D, a novel framework to estimate geometric building characteristics from 2D image inputs. By integrating SDF-based representation with semantic modality, BuildNet3D recovers fine-grained 3D geometry and semantics of building envelopes, enabling the automatic extraction of key building characteristics.},
-  year={2024},
+  year={2025},
   image={buildnet.png},
-  publisher=springer,
+  publisher=Elsevier,
   arxiv={2410.22383},
+  selected={true}
+}
+
+@article{ChatGarment,
+  abbr={PAPER},
+  title={ChatGarment: Garment Estimation, Generation and Editing via Large Language Models},
+  author={Bian, S. and Xu, C. and Xiu, Y. and Grigorev, A. and Liu, Z. and Lu, C. and Black, M. J. and Feng, Y.},
+  journal={arXiv preprint (under review)},
+  abstract={ChatGarment is a novel approach that leverages large vision-language models (VLMs) to automate the estimation, generation, and editing of 3D garment sewing patterns from images or text descriptions. Unlike previous methods that often lack robustness and interactive editing capabilities, ChatGarment finetunes a VLM to produce GarmentCode, a JSON-based, language-friendly format for 2D sewing patterns, enabling both estimating and editing from images and text instructions. To optimize performance, we refine GarmentCode by expanding its support for more diverse garment types and simplifying its structure, making it more efficient for VLM finetuning. Additionally, we develop an automated data construction pipeline to generate a large-scale dataset of image-to-sewing-pattern and text-to-sewing-pattern pairs, empowering ChatGarment with strong generalization across various garment types.},
+  year={2024},
+  arxiv={2412.17811},
+  image={chatgarment.png},
+  website={https://chatgarment.github.io/},
   selected={true}
 }
 
@@ -207,3 +208,4 @@
   preview={wave-mechanics.gif},
   abbr={Vision}
 }
+

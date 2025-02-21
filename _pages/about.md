@@ -2,11 +2,11 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Student | EPFL
+subtitle: PhD Candidate | EPFL
 
 profile:
   align: right
-  image: profile.jpg
+  image: profile.png
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>

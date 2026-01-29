@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col-2 abbr" style="margin-right: -5%">
+    <div class="col-2 abbr d-none d-md-block" style="margin-right: -5%;" align="left">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -46,7 +46,7 @@
 
   <!-- Entry bib key -->
   <!-- <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-8{% endif %}"> -->
-  <div id="{{ entry.key }}" class="col-8" style="padding-right: 5%">
+  <div id="{{ entry.key }}" class="col-8 col-md-8" style="margin-right: -5%" align="left">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -368,7 +368,7 @@
     {% endif %}
   </div>
 
-  <div class="col-2 PubImg d-flex align-items-center" style="margin-left: -7%" align="left">
+  <div class="col-4 col-md-2 PubImg d-flex align-items-center" style="position: sticky; top: 0; align-self: flex-start;" align="center">
     <img src="/assets/img/{{ entry.image }}" width="200" height="120"
       itemprop="image" alt="">
   </div>
